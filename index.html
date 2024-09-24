@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grade Calculator</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://pyscript.net/latest/pyscript.css" />
+    <script defer src="https://pyscript.net/latest/pyscript.js"></script>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="shortcut icon" type="image/x-icon" href="logo.png" />
+</head>
+<body>
+    <div id="container2" class="container2">
+        <div class="bading"></div>
+    </div>
+    <div class="container block glow">
+    <h1>Grade Calculator</h1>
+    <form id="grade-form">
+        <label for="absences">Number of Absences:</label>
+        <input type="number" id="absences" name="absences" required min="0"><br>
+
+        <label for="prelim-grade">Prelim Exam Grade (0-100):</label>
+        <input type="number" id="prelim-grade" name="prelim-grade" required min="0" max="100"><br>
+
+        <label for="quizzes-grade">Quizzes Grade (0-100):</label>
+        <input type="number" id="quizzes-grade" name="quizzes-grade" required min="0" max="100"><br>
+
+        <label for="requirements-grade">Requirements Grade (0-100):</label>
+        <input type="number" id="requirements-grade" name="requirements-grade" required min="0" max="100"><br>
+
+        <label for="recitation-grade">Recitation Grade (0-100):</label>
+        <input type="number" id="recitation-grade" name="recitation-grade" required min="0" max="100"><br>
+        <br>
+        <button type="submit">Calculate</button>
+        
+    </form>
+    
+
+    <div id="results" class="hidden">
+        <h2>Results</h2>
+        <p id="prelim-result"></p>
+        <p id="midterm-result"></p>
+        <p id="final-result"></p>
+    </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
